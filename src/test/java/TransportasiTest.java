@@ -22,8 +22,8 @@ public class TransportasiTest {
 
     @Test
     public void testCarMovement() {
-        car.move(10, 20);
-        assertEquals(10, car.getXLoc());
+        car.move(15, 20);
+        assertEquals(15, car.getXLoc());
         assertEquals(20, car.getYLoc());
     }
 
@@ -76,7 +76,7 @@ public class TransportasiTest {
         int kecepatan = 120;
 
         if (kecepatan > 100) {
-            throw new Transportasi.KecepatanTerlaluTinggiException("Kecepatan terlalu tinggi");
+            throw new Transportasi.KecepatanTerlaluTinggiException("Kecepatannya sangat tinggi");
         }
     }
 
